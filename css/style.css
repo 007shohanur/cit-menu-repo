@@ -22,12 +22,17 @@ img{
 
 
  /* Menu start  */
-.main_menu{
+.navbar{
     height: 60px;
     background: rgb(238, 58, 34);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+
 }
 
-.main_menu > ul{
+.navbar > ul{
     display: flex;
     justify-content: center;
     height: 60px;
@@ -35,7 +40,7 @@ img{
     margin-right: 20px;
 }
 
-.main_menu ul li a{
+.navbar ul li a{
     color: rgb(223, 243, 223);
     font-size: 20px;
     font-weight: 700;
@@ -47,17 +52,17 @@ img{
 }
 
 
-.main_menu ul li a:hover{
+.navbar ul li a:hover{
     color: #26383a;
     background: rgb(176, 196, 238);
 }
 
-.main_menu ul li{
+.navbar ul li{
     position: relative;
 }
 
 
-.main_menu ul li ul{
+.navbar ul li ul{
     position: absolute;
     left: 0;
     top: 60px;
@@ -70,16 +75,16 @@ img{
 }
 
 
-.main_menu ul li ul li{
+.navbar ul li ul li{
     width: 100%;
 }
 
-.main_menu ul li:hover > ul{
+.navbar ul li:hover > ul{
     opacity: 1;
     visibility: visible;
 }
 
-.main_menu ul li ul li ul{
+.navbar ul li ul li ul{
     left: 100%;
     top: 0;
 }
@@ -89,7 +94,7 @@ img{
             /* banner part start */
 .banner {
     background: url(../images/Banneri.jpg);
-    height: 600px;
+    height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -98,15 +103,29 @@ img{
 
 .text{
     color: rgb(231, 115, 61);
-margin-top: 15px;
-margin-left: 50px;
+margin-top: 150px;
+margin-left: 80px;
 padding: 20px;
 text-align: center;
+
+}
+.btn{
+    height: 40px;
+    outline: none;
+   border-radius: 5px;
+    padding: 10px 30px;
+    color: azure;
+    background: orange;
+    border: none;
+}
+.btn:hover{
+    color: #80ceec;
+    background: rgb(223, 104, 25); 
 }
 .pic img{
-    height: 300px;
-    width: 350px;
-    margin-top: 15px;
+    height: 250px;
+    width: 300px;
+    margin-top: 120px;
     margin-left: 350px;
     padding: 10px;
     border-radius: 50%;
